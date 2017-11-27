@@ -38,56 +38,37 @@ Now you have to Do 2 things :-
 
 STEP 4.1 :-  In to AnimationVc.h file create main property of animation view.
 
+`
 @interface AnimationVc : UIViewController
-
 @property(retain,nonatomic)CView *v ;
-
 @end
+
+`
+
 ![hfile](https://user-images.githubusercontent.com/7630897/33254120-41896c62-d36d-11e7-83a8-90e942872133.png)
 
 
 STEP 4.2:- in AnimationVc.m file set some functions.
 
+`
 @implementation ASMainVc
-
 @synthesize v;
-
-
 #pragma mark: View Life Cycle
-
 - (void)viewDidLoad {
-
     [super viewDidLoad];
-    
-    
     [ControllerConfig setUpNav:self];
-    
     //start animation
-    
     v = [[CView alloc]initWithConfig:[[MainConfig alloc]init] onView:self.view];
-    
-
 }
-
-
-
 #pragma mark: Memory Management Method
-
 - (void)didReceiveMemoryWarning {
-
     [super didReceiveMemoryWarning];
-    
 }
-
-
-
 #pragma mark:Hide Status Bar
-
 -(BOOL)prefersStatusBarHidden{
-
-    return true;
-    
+      return true;
 }
+`
 
 
 ![mfile](https://user-images.githubusercontent.com/7630897/33254138-56614178-d36d-11e7-99ed-f82f93012c45.png)
