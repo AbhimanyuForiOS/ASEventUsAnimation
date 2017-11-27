@@ -37,6 +37,7 @@ Xcode will Create AnimationVc.h & AnimationVc.m files.
 Now you have to Do 2 things :- 
 
 STEP 4.1 :-  In to AnimationVc.h file create main property of animation view.
+
 `@interface AnimationVc : UIViewController
 @property(retain,nonatomic)CView *v ;
 @end`
@@ -45,8 +46,11 @@ STEP 4.1 :-  In to AnimationVc.h file create main property of animation view.
 
 
 STEP 4.2:- in AnimationVc.m file set some functions.
+
 `@implementation ASMainVc
+
 @synthesize v;
+
 #pragma mark: View Life Cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -54,10 +58,12 @@ STEP 4.2:- in AnimationVc.m file set some functions.
     //start animation
     v = [[CView alloc]initWithConfig:[[MainConfig alloc]init] onView:self.view];
 }
+
 #pragma mark: Memory Management Method
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
+
 #pragma mark:Hide Status Bar
 -(BOOL)prefersStatusBarHidden{
       return true;
