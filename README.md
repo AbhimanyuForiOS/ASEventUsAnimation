@@ -37,9 +37,9 @@ Xcode will Create AnimationVc.h & AnimationVc.m files.
 Now you have to Do 2 things :- 
 
 STEP 4.1 :-  In to AnimationVc.h file create main property of animation view.
-@interface ASMainVc : UIViewController 
+`@interface ASMainVc : UIViewController 
 @property(retain,nonatomic)CView *v ; 
-@end
+@end`
 
 ![hfile](https://user-images.githubusercontent.com/7630897/33254120-41896c62-d36d-11e7-83a8-90e942872133.png)
 
