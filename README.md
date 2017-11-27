@@ -48,13 +48,11 @@ STEP 4.2:- in AnimationVc.m file set some functions.
 
 `@synthesize v;`
 
-`- (void)viewDidLoad
-{
-[super viewDidLoad];
-
-[ControllerConfig setUpNav:self];
-//start animation
-v = [[CView alloc]initWithConfig:[[MainConfig alloc]init] onView:self.view];
+`- (void)viewDidLoad {
+    [super viewDidLoad];
+    [ControllerConfig setUpNav:self];
+    //start animation
+    v = [[CView alloc]initWithConfig:[[MainConfig alloc]init] onView:self.view];
 }`
 
 `-(BOOL)prefersStatusBarHidden{
