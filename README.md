@@ -46,6 +46,20 @@ STEP 4.1 :-  In to AnimationVc.h file create main property of animation view.
 
 STEP 4.2:- in AnimationVc.m file set some functions.
 
+`@synthesize v;`
+
+`- (void)viewDidLoad
+{
+[super viewDidLoad];
+
+[ControllerConfig setUpNav:self];
+//start animation
+v = [[CView alloc]initWithConfig:[[MainConfig alloc]init] onView:self.view];
+}`
+
+`-(BOOL)prefersStatusBarHidden{
+    return true;
+}`
 
 ![mfile](https://user-images.githubusercontent.com/7630897/33254138-56614178-d36d-11e7-99ed-f82f93012c45.png)
 
